@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            color: #FFFFFF;
+            background-color: #000001;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(90, 20px);
+            grid-template-rows: repeat(40, 20px);
+            grid-gap: 2px;
+            background-color: #D0E8D0;
+        }
+
+        .grid-container>div {
+            text-align: center;
+            padding: 5px;
+            font-size: 10px;
+        }
+
+        .item9 {
+            grid-row: 22;
+            grid-column: 46;
+            background-color: #0000FF;
+        }
+
+        .item3 {
+            grid-row: 21;
+            grid-column: 48;
+            background-color: #FF0000;
+        }
+
+        .item2 {
+            grid-row: 21;
+            grid-column: 47;
+            background-color: #FF0000;
+        }
+
+        button {
+            background-color: #80595f;
+            border-color: #888888 color: #fff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1>Canadian Ridings</h1>
+
+    <p>Stuff and stuff</p>
+
+    <div class="grid-container" id="map">
+        <button class="item1">1</button>
+        <button class="item2">2</button>
+        <button class="item3">3</button>
+        <button class="item4">4</button>
+        <button class="item5">5</button>
+        <button class="item6">6</button>
+        <button class="item7">7</button>
+        <button class="item8">8</button>
+        <button class="item9">9</button>
+        <button class="item10">10</button>
+        <button class="item11">11</button>
+        <button class="item12">12</button>
+        <button class="item13">13</button>
+        <button class="item14">14</button>
+        <button class="item15">15</button>
+    </div>
+
+    <script src="land.js"></script>
+    <script src="data.js"></script>
+
+</body>
+
+</html>
