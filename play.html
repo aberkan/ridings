@@ -8,13 +8,19 @@
             background-color: #000001;
         }
 
+        button {
+            border-color: #888888;
+	    color: #fff;
+            border-radius: 8px;
+        }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(90, 20px);
-            grid-template-rows: repeat(40, 20px);
-            grid-gap: 2px;
-            background-color: #D0E8D0;
-        }
+            grid-template-columns: repeat(78, 20px);
+			width: 1560px;
+            grid-template-rows: repeat(36, 20px);
+        	margin-right: auto;
+			margin-left: auto;
+		}
 
         .grid-container>div {
             text-align: center;
@@ -22,58 +28,101 @@
             font-size: 10px;
         }
 
-        .item9 {
-            grid-row: 22;
-            grid-column: 46;
-            background-color: #0000FF;
-        }
+		.tip {
+		  visibility: hidden;
+		  position: relative;
+		  z-index: 1;
 
-        .item3 {
-            grid-row: 21;
-            grid-column: 48;
-            background-color: #FF0000;
-        }
+		  background-color: purple;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 4px;
+		  padding: 6px 6px;
+		  margin-left: 8px;
+		  margin-top: 8px;
+		  white-space: nowrap;
+		}
 
-        .item2 {
-            grid-row: 21;
-            grid-column: 47;
-            background-color: #FF0000;
-        }
-
-        button {
-            background-color: #80595f;
-            border-color: #888888 color: #fff;
+		.explanation {
+			background-color: green;
+			padding: 20px;
+			font-size: 30px;
+			max-width: 800px;
+			margin-right: auto;
+			margin-left: auto;
             border-radius: 8px;
-        }
+		}
+		.footer {
+			background-color: brown;
+			padding: 20px;
+			font-size: 30px;
+			max-width: 800px;
+			margin-right: auto;
+			margin-left: auto;
+            border-radius: 8px;
+		}
     </style>
 </head>
 
 <body>
-    <hr>
-    <h1>Canadian Ridings</h1>
+	<hr style="margin-left: auto; margin-right: auto; display:block;">
+	<div style="margin-left: auto; margin-right: auto; text-align:center; align-items:center; justify-content:center;">
+    <h1>Canadian Ridings Cartogram</h1>
+	<hr/>
+	<p>Each dot represents one electoral district</p>
+	</div>
 
-    <p>Stuff and stuff</p>
-
+	<div style="margin-left: auto; margin-right: auto; text-align:center; align-items:center; justify-content:center;">
     <div class="grid-container" id="map">
-        <button class="item1">1</button>
-        <button class="item2">2</button>
-        <button class="item3">3</button>
-        <button class="item4">4</button>
-        <button class="item5">5</button>
-        <button class="item6">6</button>
-        <button class="item7">7</button>
-        <button class="item8">8</button>
-        <button class="item9">9</button>
-        <button class="item10">10</button>
-        <button class="item11">11</button>
-        <button class="item12">12</button>
-        <button class="item13">13</button>
-        <button class="item14">14</button>
-        <button class="item15">15</button>
+    </div>
+	</div>
+
+	<hr/>
+
+    <div class="explanation" style=>
+    <p>
+	The Canadian electoral districts (ridings) dramatically vary in area, and
+	are distributed very unevenly around the country.  There's also a large
+	urban popluation with very small area districts.  Showing them on a
+	normal map like this <a
+    href="https://www.elections.ca/res/cir/maps2/images/ERMap_43.pdf">elections
+    canada map</a> gives too much attention to large rural districts like Nunavut, while
+    making it very difficult to see how urban districts voted.
+    </p>
+	<p>
+	One way to improve the map is to build a cartogram, where the electoral
+	data is layed out as a map.  There have been lots of good attempts at this
+	including <a href="https://upload.wikimedia.org/wikipedia/commons/f/fd/Canadian_Federal_Election_Cartogram_2019.svg">this from wikipedia</a>, <a href="https://electoralcartogram.ca/"> this from electoralcartogram.ca</a> and <a href="https://attaboy.ca/images/misc/canada-map-by-riding-large.png"> this from attaboy.ca</a>.  All of them give an equal area to every riding, which gives urban ridings the same weight as rural ridings.
+	</p>
+	<p>The issue with cartograms is that they distort the geography, and can make it hard to identify where each riding is actually located.  Areas like northern ontario get squeezed down while the area around Toronto get stretched to fill most of southern Ontario.  Another big issue is it becomes very hard to tell apart urban and rural ridings.  If you're unfamiliar with a riding's name the map can't tell you whether it's part of a city, a suburb, or fully rural.
+	</p>
+	<p>
+	My map attempts to bridge the divide between the two.  Unlike a geographic
+	map, each riding gets exactly 1 dot on the map.  Also there is some
+	distortion to make cities larger and some unpopulated areas smaller (sorry
+	territories).  But unlike a normal cartogram I have kept the distinction
+	between rural and urban spaces.  Black areas represent major cities, with
+	Grey areas marking greater metro areas.  Dots are orthogonally adjacent if
+	they are part of the same urban area, and are otherwise separated.  For
+	very large ridings I've tried to place the dot somewhere near the largest
+	population centers, but also those dots are more separated from their
+	neighbors.
+	</p>
+    </div>
+	<hr/>
+    <div class="footer">
+	    <p>
+	    Thanks for taking a look.  If you want to see the code it's on
+	    <a href="http://www.github.com/aberkan/ridings">github</a>
+	    and if you want to follow me in case I build more cool things I'm on
+	    <a href="http://www.twitter.com/berkan">twitter</a>
+	    </p>
     </div>
 
     <script src="land.js"></script>
+    <script src="results.js"></script>
     <script src="data.js"></script>
+    <script src="ridings.js"></script>
 
 </body>
 

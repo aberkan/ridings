@@ -1,48 +1,91 @@
-const usColor = "#000001";
-const waterColor = "#9999E0";
-const landColor = "#D0E8D0";
-const cityColor = "#BBBBBB";
+const usColor = "#400020";
+const waterColor = "#4020B0";
+const landColor = "#D0E0C0";
+const greaterColor = "#909090";
+const cityColor = "#303030";
 
 var landParams = [
-    {"name": "US1", "color": usColor, "coords": [1, 20, 30, 41]},
-    {"name": "US2", "color": usColor, "coords": [1, 35, 65, 41]},
-    {"name": "US3", "color": usColor, "coords": [40, 30, 62, 41]},
-    {"name": "US4", "color": usColor, "coords": [60, 25, 65, 41]},
+    {"name": "Canada", "color": landColor, "coords": [3, 1, 70, 37]},
 
-    {"name": "lake_sup", "color": waterColor, "coords": [27, 17, 33, 22]},
-    {"name": "lake_sup2", "color": waterColor, "coords": [24, 19, 33, 22]},
-    {"name": "lake_hur", "color": waterColor, "coords": [29, 20, 36, 27]},
-    {"name": "lake_eri", "color": waterColor, "coords": [31, 34, 37, 36]},
-    {"name": "lake_ont", "color": waterColor, "coords": [38, 30, 50, 33]},
-    {"name": "lake_win", "color": waterColor, "coords": [21, 5, 24, 13]},
+    {"name": "US1", "color": usColor, "coords": [1, 20, 28, 37]},
+    {"name": "US2", "color": usColor, "coords": [1, 35, 65, 37]},
+    {"name": "US3", "color": usColor, "coords": [39, 31, 62, 37]},
+    {"name": "US4", "color": usColor, "coords": [3, 20, 33, 26]},
+    {"name": "US5", "color": usColor, "coords": [3, 20, 31, 28]},
+    {"name": "US6", "color": usColor, "coords": [3, 20, 29, 29]},
+
+    {"name": "lake_sup", "color": waterColor, "coords": [29, 19, 33, 21]},
+    {"name": "lake_hur", "color": waterColor, "coords": [33, 20, 36, 24]},
+    {"name": "lake_hur2", "color": waterColor, "coords": [30, 22, 35, 24]},
+    {"name": "lake_hur3", "color": waterColor, "coords": [30, 22, 33, 26]},
+    {"name": "lake_hur4", "color": waterColor, "coords": [30, 22, 32, 28]},
+    {"name": "lake_eri", "color": waterColor, "coords": [28, 34, 39, 36]},
+    {"name": "lake_ont", "color": waterColor, "coords": [36, 30, 49, 32]},
+    {"name": "lake_win", "color": waterColor, "coords": [25, 7, 27, 13]},
 
 
-    {"name": "hudson1", "color": waterColor, "coords": [30, 1, 53, 10]},
-    {"name": "hudson2", "color": waterColor, "coords": [26, 1, 53, 7]},
-    {"name": "james", "color": waterColor, "coords": [42, 9, 49, 18]},
+    {"name": "hudson1", "color": waterColor, "coords": [33, 1, 78, 10]},
+    {"name": "hudson2", "color": waterColor, "coords": [30, 1, 53, 9]},
+    {"name": "hudson3", "color": waterColor, "coords": [29, 1, 53, 7]},
+    {"name": "james", "color": waterColor, "coords": [43, 9, 48, 16]},
 
-    {"name": "lab1", "color": waterColor, "coords": [40, 3, 91, 7]},
-    {"name": "lab2", "color": waterColor, "coords": [60, 1, 91, 11]},
-    {"name": "lab3", "color": waterColor, "coords": [65, 1, 91, 17]},
-    {"name": "lab4", "color": waterColor, "coords": [68, 1, 91, 41]},
+    {"name": "lab2", "color": waterColor, "coords": [65, 1, 79, 15]},
+    {"name": "lab3", "color": waterColor, "coords": [69, 1, 79, 37]},
 
-    {"name": "stlaur", "color": waterColor, "coords": [70, 1, 91, 25]},
 
-    {"name": "pacific", "color": waterColor, "coords": [1, 1, 5, 41]},
+    {"name": "fundy", "color": waterColor, "coords": [64, 30, 79, 37]},
+
+    {"name": "stlaur1", "color": waterColor, "coords": [70, 1, 79, 25]},
+    {"name": "stlaur2", "color": waterColor, "coords": [63, 22, 70, 23]},
+    {"name": "stlaur3", "color": waterColor, "coords": [57, 23, 61, 24]},
+
+    {"name": "pacific", "color": waterColor, "coords": [1, 5, 5, 37]},
+
+
+    {"name": "alaska1", "color": usColor, "coords": [1, 1, 5, 5]},
+    {"name": "alaska2", "color": usColor, "coords": [4, 4, 6, 9]},
+    {"name": "maine", "color": usColor, "coords": [61, 25, 65, 37]},
 
     {"name": "van_isle", "color": landColor, "coords": [2, 14, 4, 22]},
 
+    {"name": "baffin", "color": landColor, "coords": [54, 1, 61, 3]},
 
+    {"name": "n_que", "color": landColor, "coords": [50, 6, 57, 12]},
+    {"name": "labrador", "color": landColor, "coords": [60, 7, 62, 12]},
+    {"name": "alminski", "color": landColor, "coords": [44, 12, 46, 13]},
+    {"name": "manitoulin", "color": landColor, "coords": [34, 21, 35, 22]},
+    {"name": "bruce", "color": landColor, "coords": [34, 23, 35, 25]},
 
-    {"name": "toronto", "color": cityColor, "coords": [39, 25, 48, 32]},
-    {"name": "montreal", "color": cityColor, "coords": [50, 24, 58, 29]},
-    {"name": "ottawa", "color": cityColor, "coords": [46, 21, 49, 24]},
-    {"name": "quebec", "color": cityColor, "coords": [61, 20, 64, 23]},
+    {"name": "scotia", "color": landColor, "coords": [66, 32, 73, 35]},
+    {"name": "breton", "color": landColor, "coords": [74, 32, 76, 34]},
+    {"name": "moncton", "color": landColor, "coords": [68, 29, 70, 34]},
+		
+    {"name": "pei", "color": landColor, "coords": [71, 28, 75, 30]},
 
-    {"name": "winnipeg", "color": cityColor, "coords": [21, 15, 24, 17]},
-    {"name": "edmonton", "color": cityColor, "coords": [12, 8, 15, 11]},
-    {"name": "calgary", "color": cityColor, "coords": [12, 14, 15, 17]},
-    {"name": "vancouver", "color": cityColor, "coords": [5, 17, 11, 20]},
+    {"name": "nl1", "color": landColor, "coords": [73, 22, 78, 25]},
+    {"name": "nl2", "color": landColor, "coords": [73, 19, 75, 25]},
+
+    {"name": "gta", "color": greaterColor, "coords": [38, 25, 46, 31]},
+    {"name": "toronto", "color": cityColor, "coords": [40, 26, 45, 31]},
+    {"name": "ottawa", "color": cityColor, "coords": [47, 21, 50, 24]},
+    {"name": "hamilton", "color": cityColor, "coords": [34, 30, 36, 32]},
+    {"name": "kitwat", "color": cityColor, "coords": [33, 27, 35, 29]},
+    {"name": "london", "color": cityColor, "coords": [30, 30, 32, 32]},
+
+    {"name": "gma", "color": greaterColor, "coords": [51, 24, 57, 29]},
+    {"name": "montreal", "color": cityColor, "coords": [51, 25, 57, 28]},
+    {"name": "quebec", "color": cityColor, "coords": [61, 21, 64, 23]},
+
+    {"name": "halifax", "color": cityColor, "coords": [69, 33, 71, 35]},
+
+    {"name": "winnipeg", "color": cityColor, "coords": [26, 15, 28, 18]},
+    {"name": "saskatoon", "color": cityColor, "coords": [19, 12, 22, 13]},
+    {"name": "regina", "color": cityColor, "coords": [20, 16, 23, 17]},
+    {"name": "edmonton", "color": cityColor, "coords": [15, 7, 18, 10]},
+    {"name": "calgary", "color": cityColor, "coords": [15, 14, 18, 17]},
+
+    {"name": "gva", "color": greaterColor, "coords": [5, 16, 10, 20]},
+    {"name": "vancouver", "color": cityColor, "coords": [5, 17, 8, 19]},
 ];
 
 
