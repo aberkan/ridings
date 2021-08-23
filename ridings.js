@@ -6,7 +6,7 @@ data.forEach(function(riding) {
     r.className = "riding" + riding.code
 	var result = results[riding.code]
 	switch (result) {
-		case "Lib": color = "#FF4040"; break;
+		case "Lib": color = "#FF2040"; break;
 		case "Con": color = "#70C0FF"; break;
 		case "NDP": color = "orange"; break;
 		case "BlQ": color = "#70FFD0"; break;

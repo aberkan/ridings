@@ -14,13 +14,17 @@ var landParams = [
     {"name": "US5", "color": usColor, "coords": [3, 20, 31, 28]},
     {"name": "US6", "color": usColor, "coords": [3, 20, 29, 29]},
 
-    {"name": "lake_sup", "color": waterColor, "coords": [29, 19, 33, 21]},
+    {"name": "lake_sup", "color": waterColor, "coords": [28, 19, 33, 21]},
+    {"name": "lake_sup", "color": waterColor, "coords": [30, 18, 32, 21]},
     {"name": "lake_hur", "color": waterColor, "coords": [33, 20, 36, 24]},
     {"name": "lake_hur2", "color": waterColor, "coords": [30, 22, 35, 24]},
     {"name": "lake_hur3", "color": waterColor, "coords": [30, 22, 33, 26]},
     {"name": "lake_hur4", "color": waterColor, "coords": [30, 22, 32, 28]},
     {"name": "lake_eri", "color": waterColor, "coords": [28, 34, 39, 36]},
     {"name": "lake_ont", "color": waterColor, "coords": [36, 30, 49, 32]},
+    {"name": "lake_mic1", "color": waterColor, "coords": [26, 23, 28, 28]},
+    {"name": "lake_mic2", "color": waterColor, "coords": [27, 22, 31, 23]},
+
     {"name": "lake_win", "color": waterColor, "coords": [25, 7, 27, 13]},
 
 
