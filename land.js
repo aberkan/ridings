@@ -33,13 +33,13 @@ var landParams = [
     {"name": "hudson3", "color": waterColor, "coords": [29, 1, 53, 7]},
     {"name": "james", "color": waterColor, "coords": [43, 9, 48, 16]},
 
-    {"name": "lab2", "color": waterColor, "coords": [65, 1, 79, 15]},
-    {"name": "lab3", "color": waterColor, "coords": [69, 1, 79, 37]},
+    {"name": "lab2", "color": waterColor, "coords": [65, 1, 78, 15]},
+    {"name": "lab3", "color": waterColor, "coords": [69, 1, 78, 37]},
 
 
-    {"name": "fundy", "color": waterColor, "coords": [64, 30, 79, 37]},
+    {"name": "fundy", "color": waterColor, "coords": [64, 30, 78, 37]},
 
-    {"name": "stlaur1", "color": waterColor, "coords": [70, 1, 79, 25]},
+    {"name": "stlaur1", "color": waterColor, "coords": [70, 1, 78, 25]},
     {"name": "stlaur2", "color": waterColor, "coords": [63, 22, 70, 23]},
     {"name": "stlaur3", "color": waterColor, "coords": [57, 23, 61, 24]},
 
@@ -66,8 +66,8 @@ var landParams = [
 		
     {"name": "pei", "color": landColor, "coords": [71, 28, 75, 30]},
 
-    {"name": "nl1", "color": landColor, "coords": [73, 22, 78, 25]},
-    {"name": "nl2", "color": landColor, "coords": [73, 19, 75, 25]},
+    {"name": "nl1", "color": landColor, "coords": [72, 22, 77, 25]},
+    {"name": "nl2", "color": landColor, "coords": [72, 19, 74, 25]},
 
     {"name": "gta", "color": greaterColor, "coords": [38, 25, 46, 31]},
     {"name": "toronto", "color": cityColor, "coords": [40, 26, 45, 31]},

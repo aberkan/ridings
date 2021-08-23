@@ -1,11 +1,11 @@
 var data = [
-    {"code": 10001, "name": "Avalon ", "coord": [76, 24]},
-    {"code": 10002, "name": "Bonavista-Burin-Trinity", "coord": [75, 22]},
-    {"code": 10003, "name": "Coast of Bays-Central-Notre Dame", "coord": [74, 21]},
+    {"code": 10001, "name": "Avalon ", "coord": [75, 24]},
+    {"code": 10002, "name": "Bonavista-Burin-Trinity", "coord": [74, 22]},
+    {"code": 10003, "name": "Coast of Bays-Central-Notre Dame", "coord": [73, 21]},
     {"code": 10004, "name": "Labrador", "coord": [68, 17]},
-    {"code": 10005, "name": "Long Range Mountains", "coord": [73, 23]},
-    {"code": 10006, "name": "St. John\'s East", "coord": [77, 22]},
-    {"code": 10007, "name": "St. John\'s South-Mount Pearl", "coord": [77, 23]},
+    {"code": 10005, "name": "Long Range Mountains", "coord": [72, 23]},
+    {"code": 10006, "name": "St. John\'s East", "coord": [76, 22]},
+    {"code": 10007, "name": "St. John\'s South-Mount Pearl", "coord": [76, 23]},
 
     {"code": 11001, "name": "Cardigan", "coord": [74, 29]},
     {"code": 11002, "name": "Charlottetown", "coord": [73, 29]},
