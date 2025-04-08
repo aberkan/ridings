@@ -63,7 +63,7 @@ var landParams = [
     {"name": "scotia", "color": landColor, "coords": [66, 32, 73, 35]},
     {"name": "breton", "color": landColor, "coords": [74, 32, 76, 34]},
     {"name": "moncton", "color": landColor, "coords": [68, 29, 70, 34]},
-		
+
     {"name": "pei", "color": landColor, "coords": [71, 28, 75, 30]},
 
     {"name": "nl1", "color": landColor, "coords": [72, 22, 77, 25]},
@@ -86,7 +86,7 @@ var landParams = [
     {"name": "saskatoon", "color": cityColor, "coords": [19, 12, 22, 13]},
     {"name": "regina", "color": cityColor, "coords": [20, 16, 23, 17]},
     {"name": "edmonton", "color": cityColor, "coords": [15, 7, 18, 10]},
-    {"name": "calgary", "color": cityColor, "coords": [15, 14, 18, 17]},
+    {"name": "calgary", "color": cityColor, "coords": [15, 13, 18, 17]},
 
     {"name": "gva", "color": greaterColor, "coords": [5, 16, 10, 20]},
     {"name": "vancouver", "color": cityColor, "coords": [5, 17, 8, 19]},

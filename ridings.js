@@ -12,18 +12,19 @@ data.forEach(function(riding) {
 		case "BlQ": color = "#70FFD0"; break;
 		case "Grn": color = "#40F040"; break;
 		case "Ind": color = "brown"; break;
+        default: color = "white"; break;
 	}
-	
+
     r.setAttribute("style", "grid-row: " + riding.coord[1] + "; grid-column: " +
 		riding.coord[0] + "; background-color: " + color);
 
-	r.setAttribute("onclick",  "location.href='https://www.elections.ca/res/cir/maps2/mapprov.asp?map=" + riding.code + "'");
+	r.setAttribute("onclick",  "location.href='https://www.elections.ca/map_02.aspx?lang=e&p=06_ON&t=/1Dis/" + riding.code + "&d=" + riding.code + "'");
 	r.type = "button";
 
     var t = document.createElement("span")
     t.className = "tip"
     t.innerText = riding.name + " (" + result + ")";
- 
+
 	r.onmouseenter = function() {
 		t.setAttribute("style", "visibility: visible");
 	};
